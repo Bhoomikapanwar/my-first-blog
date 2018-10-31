@@ -1,11 +1,5 @@
-{% load static %}<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Boards</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-  </head>
-  <body>
+{% extends "base.html" %}
+{% block content %}
     <div class="container">
       <ol class="breadcrumb my-4">
         <li class="breadcrumb-item active">Boards</li>
@@ -38,5 +32,4 @@
       {% endfor %}
     </tbody>
   </table>
-  </body>
-</html>
+  {%endblock%}
